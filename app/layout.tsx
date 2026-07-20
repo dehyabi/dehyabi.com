@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dehya Qalbi",
-  description: "Site launching soon.",
+  title: "Dehya Qalbi — Full Stack Engineer",
+  description: "Full Stack Engineer building scalable web and AI-powered solutions. Based in Indonesia, working globally.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -28,9 +28,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-50">
+      <body className="min-h-full flex flex-col bg-[#050507] text-zinc-50">
+        {/* Global noise texture overlay */}
+        <div aria-hidden="true" className="noise-overlay" />
         {children}
       </body>
     </html>
