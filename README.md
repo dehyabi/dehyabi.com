@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# dehyabi.com
+
+Personal portfolio website of **Dehya Qalbi** — a Full-Stack AI Engineer specializing in LLM pipelines, FastAPI backends, and React/Next.js frontends.
+
+🔗 **Live:** [https://dehyabi.com](https://dehyabi.com)
+
+---
+
+## Overview
+
+This is a modern, SEO-optimized portfolio built with **Next.js 16** and **Tailwind CSS v4**. It features a futuristic dark aesthetic with particle animations, aurora gradients, and responsive design.
+
+### Sections
+
+- **Hero** — Animated particle network, perspective grid floor, scan line, and rotating glow rings
+- **About** — Professional summary with categorized skill tags
+- **Contact** — Email, LinkedIn, and GitHub links with copy-to-clipboard support
+- **Footer** — Minimal footer with social links
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | [Next.js](https://nextjs.org) 16 (App Router) |
+| Language | TypeScript |
+| Styling | [Tailwind CSS](https://tailwindcss.com) v4 |
+| Fonts | [Geist](https://vercel.com/font) Sans + Mono |
+| Icons | [Lucide React](https://lucide.dev) |
+| Build | Static export (`output: "export"`) |
+
+---
+
+## Project Structure
+
+```
+app/
+├── components/
+│   ├── Navigation.tsx      # Fixed header with active section tracking
+│   ├── HeroSection.tsx     # Futuristic hero with canvas particle network
+│   ├── AboutSection.tsx    # Bio and categorized skills
+│   ├── ContactSection.tsx  # Contact links with copy-to-clipboard
+│   └── Footer.tsx          # Minimal footer
+├── globals.css             # Tailwind theme + custom animations
+├── layout.tsx              # Root layout with fonts
+├── page.tsx                # Homepage with metadata + JSON-LD
+├── robots.ts               # Search engine robots config
+└── sitemap.ts              # XML sitemap generator
+public/
+├── favicon.svg             # Hexagon logo favicon
+├── apple-touch-icon.png    # iOS home screen icon
+└── og-image.png            # Open Graph social preview image
+scripts/
+└── generate-og-image.js    # Sharp-based OG image generator
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+The static site is exported to the `dist/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Comprehensive metadata (title, description, keywords, author)
+- Open Graph tags for social sharing
+- Twitter Card support
+- JSON-LD structured data (Person schema)
+- `robots.txt` with sitemap reference
+- XML sitemap with change frequency and priority
+- Semantic HTML (`<main>`, `<section>`, `<header>`, `<footer>`)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design Highlights
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Particle Network** — Canvas-based constellation animation with drifting dots and connecting lines
+- **Perspective Grid** — Retro-futuristic wireframe floor fading into the distance
+- **Aurora Blobs** — Multi-layer animated gradient orbs (indigo, violet, cyan)
+- **Rotating Rings** — Subtle spin-animated glow rings behind the name
+- **Scan Line** — Horizontal sweep line for a CRT/monitor aesthetic
+- **Responsive** — Mobile-first, works seamlessly across all screen sizes
+
+---
+
+## License
+
+© [Dehya Qalbi](https://dehyabi.com). All rights reserved.
