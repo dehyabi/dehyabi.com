@@ -17,7 +17,7 @@ export function ContactSection() {
               </h2>
             </div>
             <p className="max-w-lg text-lg text-zinc-300 leading-relaxed">
-              Open to freelance, full-time, and consulting opportunities. Let&apos;s build something together.
+              Currently exploring new challenges in AI engineering and full-stack roles. If you are building something ambitious, I would love to hear about it.
             </p>
           </div>
 
