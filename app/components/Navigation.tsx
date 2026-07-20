@@ -14,7 +14,7 @@ export function Navigation() {
   }, []);
 
   useEffect(() => {
-    const sections = ["about", "projects", "blog", "contact"];
+    const sections = ["about", "contact"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,8 +36,6 @@ export function Navigation() {
 
   const links = [
     { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-    { href: "#blog", label: "Blog" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -50,12 +48,40 @@ export function Navigation() {
       }`}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a
-          href="#"
-          className="relative text-sm font-semibold tracking-tight text-zinc-100 hover:text-white transition-colors group"
-        >
-          dehyabi.com
-          <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-zinc-100 transition-all duration-300 group-hover:w-full" />
+        <a href="#" className="flex items-center gap-2.5 group" aria-label="Dehya Qalbi home">
+          {/* Logo mark */}
+          <span className="relative flex items-center justify-center w-8 h-8">
+            <svg viewBox="0 0 32 32" className="w-7 h-7" aria-hidden="true">
+              <defs>
+                <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#818cf8" />
+                  <stop offset="100%" stopColor="#22d3ee" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z"
+                fill="none"
+                stroke="url(#navLogoGrad)"
+                strokeWidth="1.8"
+                strokeLinejoin="round"
+                className="transition-all duration-300"
+              />
+              <path
+                d="M16 10 L22 16 L16 22 L10 16 Z"
+                fill="none"
+                stroke="url(#navLogoGrad)"
+                strokeWidth="1.4"
+                strokeLinejoin="round"
+                className="transition-all duration-300"
+              />
+              <circle cx="16" cy="16" r="1.8" fill="#22d3ee" />
+              <circle cx="16" cy="16" r="0.8" fill="#050507" />
+            </svg>
+            <span className="absolute inset-0 rounded-lg bg-indigo-400/0 transition-all duration-300 group-hover:bg-indigo-400/10 group-hover:blur-md" />
+          </span>
+          <span className="text-sm font-semibold tracking-tight text-zinc-100 transition-colors duration-300">
+            dehyabi
+          </span>
         </a>
 
         {/* Desktop links */}

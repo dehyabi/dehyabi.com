@@ -19,13 +19,12 @@ export function AboutSection() {
           </div>
           <p className="max-w-2xl text-lg text-zinc-300 leading-relaxed">
             I&apos;m a Full Stack Engineer with 5+ years of experience building scalable web
-            applications and AI-powered solutions. Currently working at <span className="text-zinc-100 font-medium">IPOT</span> on digital
+            applications and AI-powered solutions. Currently working at <span className="text-zinc-100 font-medium">Jackson Ventures LLC dba IPOT</span> on digital
             transformation projects.
           </p>
           <p className="max-w-2xl text-zinc-400 leading-relaxed">
-            I specialize in integrating AI agents (OpenClaw, Claude, Ollama) into production
-            systems, building REST APIs with FastAPI, and crafting clean UIs with React/Next.js.
-            Based in Indonesia, working globally.
+            I bridge machine learning and product engineering — deploying LLM-powered features,
+            designing robust FastAPI backends, and building interfaces users actually enjoy.
           </p>
         </div>
 

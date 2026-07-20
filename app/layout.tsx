@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -11,14 +10,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Dehya Qalbi — Full Stack Engineer",
-  description: "Full Stack Engineer building scalable web and AI-powered solutions. Based in Indonesia, working globally.",
-  icons: {
-    icon: "/favicon.svg",
-  },
-};
 
 export default function RootLayout({
   children,

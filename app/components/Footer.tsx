@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="mx-auto max-w-5xl px-6 py-10 border-t border-zinc-800/40">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-zinc-500">
-          © {new Date().getFullYear()} Dehya Qalbi. Built with Next.js &amp; Tailwind CSS.
+          © {new Date().getFullYear()} Dehya Qalbi.
         </p>
         <div className="flex items-center gap-6">
           <a

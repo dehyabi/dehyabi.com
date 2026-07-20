@@ -193,18 +193,18 @@ export function HeroSection() {
           className="animate-fade-up max-w-2xl text-lg text-zinc-400 sm:text-xl leading-relaxed"
           style={{ "--delay": "0.1s" } as React.CSSProperties}
         >
-          Full Stack Engineer building scalable web applications and AI-powered solutions.
-          5+ years shipping products across fintech, e-commerce, and enterprise.
+          Full-Stack AI Engineer shipping production-grade systems — from LLM pipelines
+          to React frontends. 5+ years turning complex requirements into clean, scalable code.
         </p>
         <div
           className="animate-fade-up flex flex-wrap items-center justify-center gap-3 pt-2"
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
           <a
-            href="#projects"
+            href="#about"
             className="rounded-lg bg-zinc-100 px-6 py-2.5 text-sm font-medium text-zinc-950 hover:bg-white hover:shadow-[0_0_24px_rgba(255,255,255,0.12)] transition-all duration-300"
           >
-            View Projects
+            View Skills
           </a>
           <a
             href="#contact"
