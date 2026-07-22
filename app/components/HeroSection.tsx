@@ -193,8 +193,7 @@ export function HeroSection() {
           className="animate-fade-up max-w-2xl text-lg text-zinc-400 sm:text-xl leading-relaxed"
           style={{ "--delay": "0.1s" } as React.CSSProperties}
         >
-          Full-Stack AI Engineer shipping production-grade systems — from LLM pipelines
-          to React frontends. 5+ years turning complex requirements into clean, scalable code.
+          Building things that work, that last, and that make sense. Full-stack, AI-powered, end to end.
         </p>
         <div
           className="animate-fade-up flex flex-wrap items-center justify-center gap-3 pt-2"

@@ -17,7 +17,7 @@ export function ContactSection() {
               </h2>
             </div>
             <p className="max-w-lg text-lg text-zinc-300 leading-relaxed">
-              Currently exploring new challenges in AI engineering and full-stack roles. If you are building something ambitious, I would love to hear about it.
+              Currently exploring new challenges in AI engineering and full-stack roles.
             </p>
           </div>
 

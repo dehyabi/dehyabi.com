@@ -18,13 +18,9 @@ export function AboutSection() {
             </h2>
           </div>
           <p className="max-w-2xl text-lg text-zinc-300 leading-relaxed">
-            I&apos;m a Full Stack Engineer with 5+ years of experience building scalable web
+            I&apos;m a Full Stack AI Engineer with 5+ years of experience building scalable web
             applications and AI-powered solutions. Currently working at <span className="text-zinc-100 font-medium">Jackson Ventures LLC dba IPOT</span> on digital
             transformation projects.
-          </p>
-          <p className="max-w-2xl text-zinc-400 leading-relaxed">
-            I bridge machine learning and product engineering — deploying LLM-powered features,
-            designing robust FastAPI backends, and building interfaces users actually enjoy.
           </p>
         </div>
 
